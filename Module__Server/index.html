@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Portfolio</title>
+
+   <!-- Inline styling of all the webpages -->
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         height: 100vh;
+         background: linear-gradient(rgb(119, 122, 114), rgb(117, 201, 138), rgba(151, 183, 224, 0.849));
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         font-size: 20px;
+         min-height: 10vh;
+         border: 1px solid plum;
+         background-color: rgb(166, 202, 233);
+         text-transform: capitalize;
+         padding: 0 20px;
+         width: 100%;
+      }
+
+      ul {
+         display: flex;
+      }
+
+      a {
+         margin: 0 7px;
+         font-weight: 400;
+         text-transform: uppercase;
+         font-size: 17px;
+         text-decoration: none;
+         word-spacing: 2px;
+         letter-spacing: 1px;
+         color: black;
+
+      }
+
+      a:hover {
+         text-decoration: underline;
+         padding: 5px;
+         background-color: transparent;
+      }
+
+      li {
+         list-style: none;
+         margin: 0 7px;
+      }
+
+
+      header {
+         box-sizing: border-box;
+
+      }
+
+      header img {
+         width: 50%;
+      }
+
+      .flex {
+         flex-direction: row;
+         margin: 2.5rem auto;
+         padding: 2.5rem auto;
+      }
+
+      .container {
+         display: flex;
+         justify-content: space-between;
+         margin: 3rem 1.2rem;
+         align-items: center;
+         background: rgb(148, 121, 105);
+         padding: 1.1rem;
+         box-shadow: 2px 1px 35px;
+         background: linear-gradient(rgb(119, 122, 114), rgb(117, 201, 138), rgba(151, 183, 224, 0.849));
+      }
+
+      .container div {
+         font-weight: 500;
+         padding: .5rem 27px 10px;
+         text-align: left;
+         box-sizing: content-box;
+      }
+
+      .container h2 {
+         font-size: 2rem;
+         padding-bottom: 2.3rem;
+      }
+
+      .container .text {
+         width: 50%;
+         margin: 2.1rem 1rem;
+      }
+
+      .container h1 {
+         font-size: 40px;
+
+      }
+
+      h1::first-letter {
+         color: rgb(99, 80, 80);
+      }
+
+      .container h3 {
+         font-size: 35px;
+         margin: .5rem 0;
+         color: rgb(27, 19, 19);
+      }
+      footer{
+         background-color: black;
+         color: white;
+         min-height: 15vh;
+      }
+      footer a{
+         color: white;
+      }
+      footer .footer{
+         margin: 1rem;
+         padding: 2rem 0;
+      }
+
+      @media only screen and (max-width: 750px) {
+         .flex {
+            flex-direction: column;
+            margin: 3rem auto;
+            padding: 3rem auto;
+         }
+
+         .container {
+            width: 60%;
+         }
+
+         .container .text {
+            width: 100%;
+         }
+
+         .container img {
+            width: 70%;
+         }
+      }
+
+      @media only screen and (max-width: 750px) {
+         .flex {
+            flex-direction: column;
+            margin: 3rem auto;
+            padding: 3rem auto;
+         }
+
+         .container {
+            width: 100%;
+         }
+
+         .container .text {
+            width: 100%;
+         }
+
+         .container img {
+            width: 100%;
+         }
+      }
+   </style>
+   <!-- Inline styling of all the webpages -->
+
+</head>
+
+<body>
+   <nav>
+      <div>
+         <h1>Princess03</h1>
+      </div>
+      <div>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+         </ul>
+      </div>
+   </nav>
+   <section>
+      <header class="container flex">
+
+         <div class="text">
+            <h2>HELLO!</h2>
+            <h1>I am Ajose Halimot</h1>
+            <h3>A frontend Developer</h3>
+         </div>
+
+         <img src="./image/certificate.jpg" alt="Certificate image">
+      </header>
+
+
+   </section>
+
+   <footer>
+      <div class="footer">
+         <li><a href="#">home</a></li>
+         <li><a href="about.html">about</a></li>
+         <li><a href="contact.html">contact</a></li>
+      </div>
+   </footer>
+   <script src="main.js"></script>
+</body>
+
+</html>
